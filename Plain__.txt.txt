@@ -43,5 +43,9 @@ git remote add origin https://github.com/OPR-A-RUBY/Bad-App.git
 git push -u origin master
 
 Аналогичные эффект должен получиться через ungit 
+Здесь можно подключ нашу папку к репозиторию через Fetch from origin
+вводим имя: origin
+url: git@github.com:OPR-A-RUBY/ZZ-Blog.git
+Внимание! именно SSH иначе придётся вводить логин и пароль
 
-4.3. Запускаем ungit
+4.3. Запускаем ungit 
