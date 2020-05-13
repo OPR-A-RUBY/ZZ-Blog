@@ -54,3 +54,6 @@ url: git@github.com:OPR-A-RUBY/ZZ-Blog.git
 Далее все команды выполняются в терминале открытом в главной папке приложения
 
 # rails g controller home index
+
+Так мы создали контроллер который будет выполняться при обращении к странице 
+http://localhost:3000/home/index
