@@ -1,0 +1,30 @@
+1. Устанавливаем Rais
+# gem install rails
+
+2. Переходим в папку, где будет создаваться папка с нашим приложением внутри. И вводим команду создания нового приложенеия на RAILS
+# rails new ZZ-Blog
+Будет создана папка ZZ_Blog, в ней ещё куча папок и файлов. Затем автоматически запуститься установка необходимых гемов: bundle install
+и потом ещё куча зависимостей. Всё автоматически.
+Процесс не быстрый придётся подождать ...
+13.05.2020 - у меня получилось 16.886 файлов и 2985 папок
+
+3. Дальше смотрим, на запус RAILS т.е. вводим коменду:
+# rails server
+будет примерно такой вывод в терминале:
+=> Booting Puma
+=> Rails 6.0.3 application starting in development 
+=> Run `rails server --help` for more startup options
+Puma starting in single mode...
+* Version 4.3.3 (ruby 2.6.0-p0), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://127.0.0.1:3000
+* Listening on tcp://[::1]:3000
+Use Ctrl-C to stop
+
+По адресу http://localhost:3000/
+смотрим стартовую картинку RUBY on RAILS
+здесь же видны версии Rails и Ruby
+у меня вот так:
+Rails version: 6.0.3
+Ruby version: ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]
