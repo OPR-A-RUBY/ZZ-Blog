@@ -28,3 +28,20 @@ Use Ctrl-C to stop
 у меня вот так:
 Rails version: 6.0.3
 Ruby version: ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]
+
+4. Делаем репозиторий в github.com
+
+4.1. На сайте создаём пустой репозиторий с именем, как имя главной папки нашего приложения.
+
+4.2. Далее запускаем в терминале, открытом внутри основной папки приложения 
+
+echo "# Bad-App" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/OPR-A-RUBY/Bad-App.git
+git push -u origin master
+
+Аналогичные эффект должен получиться через ungit 
+
+4.3. Запускаем ungit
