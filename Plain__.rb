@@ -193,5 +193,5 @@ ____ 11. Перенаправление маршрута (ВАЖНО!)
 # url этого маршрута
 
 # В результате: <form action="/zamets/new"
-# заменится на: <form action="/zamet"
+# заменится на: <form action="/zamets"
 # т.е. данные будут использовать маршрут POST /zamets zamets#create
