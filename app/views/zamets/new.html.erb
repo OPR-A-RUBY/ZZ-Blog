@@ -2,6 +2,14 @@
 
 <%= form_for :zamet do |f| %>
 	<p>
-		Test
+		<%= f.label :Название_заметки %><br />
+		<%= f.text_field :z_title %>
+	</p>
+	<p>
+		<%= f.label :Текст_заметки %><br />
+		<%= f.text_area :z_body %>
+	</p>
+	<p>
+		<%= f.submit %>
 	</p>
 <% end %>
