@@ -83,7 +83,7 @@ rails db:migrate
 
 # Проверяем наличие таблицы в db.
 
-____ 7. Настраиваем маршруты
+____ 7. Добавляем маршруты. Сначала смотрим что уже есть:
 
 rake routes
 # выводит нам все существующие маршруты и контроллеры с экшенами к ним
@@ -95,7 +95,26 @@ rake routes
 #   |        |        /------ маршрут 
 #   |        |        |                         /---------- контроллер
 #   V        V        V                         V    V----- экшен 
-# home_index GET    /home/index(.:format)       home#index
+  home_index GET    /home/index(.:format)       home#index
 
 # файл настройки маршрутов можно увидеть в config/routes.rb
 
+____ 7.1. Заходим в файл настройки машрутизации и вводим туда
+
+resources :zamets
+
+# Это позволило создать 8 НОВЫХ МАРШРУТОВ, которые можно увидеть через
+rake routes
+
+# вот фрагмент вывода команды:
+home_index GET    /home/index(.:format)       home#index
+    zamets GET    /zamets(.:format)           zamets#index
+           POST   /zamets(.:format)           zamets#create
+ new_zamet GET    /zamets/new(.:format)       zamets#new
+edit_zamet GET    /zamets/:id/edit(.:format)  zamets#edit
+     zamet GET    /zamets/:id(.:format)       zamets#show
+           PATCH  /zamets/:id(.:format)       zamets#update
+           PUT    /zamets/:id(.:format)       zamets#update
+           DELETE /zamets/:id(.:format)       zamets#destroy
+
+           
