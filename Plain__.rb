@@ -57,3 +57,14 @@ url: git@github.com:OPR-A-RUBY/ZZ-Blog.git
 
 Так мы создали контроллер который будет выполняться при обращении к странице 
 http://localhost:3000/home/index
+
+6. Создаём модель, с набором свойств
+
+# rails g model Zamet z_title:string z_body:text
+
+Проверяем наличие миграции в db.
+
+# rails db:migrate
+
+Проверяем наличие таблицы в db.
+
