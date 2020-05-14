@@ -108,31 +108,44 @@ resources :zamets
 rake routes
 
 # вот фрагмент вывода команды:
-home_index GET    /home/index(.:format)       home#index
-    zamets GET    /zamets(.:format)           zamets#index
-           POST   /zamets(.:format)           zamets#create
- new_zamet GET    /zamets/new(.:format)       zamets#new
-edit_zamet GET    /zamets/:id/edit(.:format)  zamets#edit
-     zamet GET    /zamets/:id(.:format)       zamets#show
-           PATCH  /zamets/:id(.:format)       zamets#update
-           PUT    /zamets/:id(.:format)       zamets#update
-           DELETE /zamets/:id(.:format)       zamets#destroy
+# home_index GET    /home/index(.:format)       home#index
+#     zamets GET    /zamets(.:format)           zamets#index
+#            POST   /zamets(.:format)           zamets#create
+#  new_zamet GET    /zamets/new(.:format)       zamets#new
+# edit_zamet GET    /zamets/:id/edit(.:format)  zamets#edit
+#      zamet GET    /zamets/:id(.:format)       zamets#show
+#            PATCH  /zamets/:id(.:format)       zamets#update
+#            PUT    /zamets/:id(.:format)       zamets#update
+#            DELETE /zamets/:id(.:format)       zamets#destroy
 
 ____ 8. Создаём контроллер zamets 
 
 #                       V - множественное число
 rails g controller zamets
 # получили вот такой вывод в терминале
-Running via Spring preloader in process 16520
-      create  app/controllers/zamets_controller.rb
-      invoke  erb
-      create    app/views/zamets
-      invoke  test_unit
-      create    test/controllers/zamets_controller_test.rb
-      invoke  helper
-      create    app/helpers/zamets_helper.rb
-      invoke    test_unit
-      invoke  assets
-      invoke    scss
-      create      app/assets/stylesheets/zamets.scss
+# Running via Spring preloader in process 16520
+#       create  app/controllers/zamets_controller.rb
+#       invoke  erb
+#       create    app/views/zamets
+#       invoke  test_unit
+#       create    test/controllers/zamets_controller_test.rb
+#       invoke  helper
+#       create    app/helpers/zamets_helper.rb
+#       invoke    test_unit
+#       invoke  assets
+#       invoke    scss
+#       create      app/assets/stylesheets/zamets.scss
 
+____ 9. Создаём метод "new" в нашем контроллере и затем представление для нашего
+
+# В файле контроллера создаём новый метод new
+
+    def new
+    end
+# он пустой, но для отработки без ошибки этого достаточно
+
+# Теперь создаём файл представления по адресу app/views/zamets/
+# Имя у него будет по аналогии с созданным сейчас методом 
+new.html.erb
+
+# Для тестирования работоспособности внесём в него <h2>New_Zamet</h2>
