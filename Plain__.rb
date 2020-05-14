@@ -100,7 +100,8 @@ rake routes
 # файл настройки маршрутов можно увидеть в config/routes.rb
 
 ____ 7.1. Заходим в файл настройки машрутизации и вводим туда
-
+#       /---------- множественное число
+#       V       V - множественное число 
 resources :zamets
 
 # Это позволило создать 8 НОВЫХ МАРШРУТОВ, которые можно увидеть через
@@ -117,4 +118,21 @@ edit_zamet GET    /zamets/:id/edit(.:format)  zamets#edit
            PUT    /zamets/:id(.:format)       zamets#update
            DELETE /zamets/:id(.:format)       zamets#destroy
 
-           
+____ 8. Создаём контроллер zamets 
+
+#                       V - множественное число
+rails g controller zamets
+# получили вот такой вывод в терминале
+Running via Spring preloader in process 16520
+      create  app/controllers/zamets_controller.rb
+      invoke  erb
+      create    app/views/zamets
+      invoke  test_unit
+      create    test/controllers/zamets_controller_test.rb
+      invoke  helper
+      create    app/helpers/zamets_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    scss
+      create      app/assets/stylesheets/zamets.scss
+

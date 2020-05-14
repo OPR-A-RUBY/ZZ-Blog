@@ -1,0 +1,2 @@
+class ZametsController < ApplicationController
+end
